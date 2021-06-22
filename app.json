@@ -1,0 +1,12 @@
+{
+  "name": "politiki",
+  "displayName": "politiki",
+  "expo": {
+    "name": "politiki",
+    "slug": "politiki",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
