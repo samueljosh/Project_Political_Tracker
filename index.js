@@ -1,14 +1,18 @@
 import "react-native-gesture-handler";
 import { registerRootComponent } from "expo";
 import { Provider } from "react-redux";
-import store from "./store";
-
+import ConfigStore from "./store";
+import React, { Component } from 'react';
 import App from "./App";
 
+const store = ConfigStore()
 const rootComponent = () => {
-  <Provider store={store}>
-    <App />
-  </Provider>;
+
+  return (
+    <Provider store={store}>
+      <App />
+    </Provider>
+  )
 };
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
